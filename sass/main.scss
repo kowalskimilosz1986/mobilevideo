@@ -1,0 +1,420 @@
+@use './colors' as *;
+@use './animations.scss' as *;
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-padding-top: 74px;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #333;
+	color: $hamburger;
+}
+
+section {
+	color: black;
+}
+
+.white-text {
+	color: $hamburger;
+}
+
+.orange-text {
+	color: $mainColor;
+}
+
+.shadow-bg {
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: 0.8s;
+}
+
+.section-title {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.underline {
+	margin: 0 auto 40px;
+	width: 80px;
+	height: 3px;
+	border-radius: 10%;
+	background-color: $mainColor;
+}
+
+nav {
+	text-transform: uppercase;
+	font-weight: 900;
+	z-index: 2;
+	transition: background-color 0.8s;
+
+	.navbar-expand-lg .navbar-nav .nav-link {
+		color: $hamburger;
+	}
+
+	.nav-link {
+		color: $hamburger;
+	}
+	.navbar-toggler {
+		padding: 10px 20px;
+		border: 2px solid $mainColor;
+	}
+
+	.fa-bars:before,
+	.fa-navicon:before {
+		color: $hamburger;
+	}
+
+	.nav-link:focus,
+	.nav-link:hover,
+	.navbar-nav .nav-link.active,
+	.navbar-nav .nav-link.show {
+		color: $mainColor;
+	}
+
+	.navbar-brand:focus,
+	.navbar-brand:hover {
+		text-shadow: 1px 1px 6px $hamburger;
+		transition: 1s;
+	}
+}
+
+.navbar-brand {
+	color: $hamburger;
+	transition: 1.5s;
+}
+
+.fa-camera {
+	color: $mainColor;
+	font-weight: bold;
+}
+
+header.hero-img {
+	position: relative;
+	background-image: url(/img/mobileSmall.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	color: $hamburger;
+	z-index: 0;
+
+	h1 {
+		text-transform: uppercase;
+	}
+
+	.hero-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.6);
+		z-index: -2;
+	}
+
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		flex-direction: column;
+		height: 100%;
+	}
+}
+
+.fa-chevron-down {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	color: $mainColor;
+	font-size: 40px;
+	bottom: 20px;
+	text-shadow: 1px 1px 5px $hamburger;
+}
+
+.btn-outline-light {
+	color: $mainColor;
+	margin: 0 auto;
+}
+
+.aboutme {
+	i {
+		margin-top: 20px;
+		font-size: 48px;
+		text-shadow: 0px 0px 2px;
+		color: #333;
+	}
+
+	p.aboutme-card-title {
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+
+	p.aboutme-card-text {
+		font-size: 15px;
+		letter-spacing: 2px;
+	}
+	.aboutme-hover {
+		transition: color 0.5s;
+	}
+	.aboutme-hover:hover {
+		color: $mainColor;
+		transition: 0.5s;
+	}
+}
+
+.aboutme-item {
+	margin: 10px 0;
+}
+
+.item-title {
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.aboutme-item-text {
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+
+.item-icon {
+	font-size: 30px;
+	text-shadow: 0px 0px 3px;
+	padding: 10px;
+}
+.aboutme-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, 0.5);
+	z-index: -1;
+}
+
+.aboutme-hero {
+	position: relative;
+	background-image: url(/img/videomakingBig.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 1;
+}
+
+.portfolio {
+	.carousel-item {
+		background-color: $hamburger;
+		height: 600px;
+		width: 100%;
+	}
+
+	.carousel-caption {
+		background-color: rgb(0, 0, 0, 0.5);
+		left: 0;
+		right: 0;
+		padding: 40px 0;
+	}
+
+	.carousel-indicators {
+		padding: 20px;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		object-fit: contain;
+	}
+
+	.card-img-top {
+		height: 150px;
+		object-fit: cover;
+	}
+
+	.card-text {
+		word-wrap: break-word;
+	}
+}
+
+.prices {
+	.prices-box {
+		margin: 30px;
+		padding: 30px 40px;
+		background-color: $hamburger;
+		box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.5);
+		border-radius: 10px;
+		transition: 0.8s;
+	}
+
+	.prices-box:hover {
+		transform: scale(105%);
+	}
+
+	.price-title {
+		text-transform: uppercase;
+		color: $mainColor;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.bg-shadow {
+		background-color: rgb(0, 0, 0, 0.03);
+	}
+
+	.box-price {
+		font-size: 25px;
+		font-weight: bold;
+	}
+
+	a {
+		text-decoration: none;
+		color: $mainColor;
+	}
+}
+
+.team-section {
+	position: relative;
+	background-image: url(/img/team/zespółShadow.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+	z-index: 1;
+
+	h2 {
+		color: $hamburger;
+	}
+
+	h5 {
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.card {
+		transition: 0.5s;
+		img {
+			height: 300px;
+			object-fit: cover;
+		}
+	}
+
+	.card-body {
+		height: 130px;
+	}
+
+	.card-text {
+		font-weight: bolder;
+		transform: translateY(50%);
+	}
+
+	.card-footer {
+		padding: 15x;
+		font-size: 35px;
+	}
+
+	.card:hover {
+		transform: scale(105%);
+	}
+
+	.team-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background-color: rgb(0, 0, 0, 0.3);
+		z-index: -1;
+	}
+}
+
+.achivements-section {
+	.item-achivement {
+		font-size: 48px;
+		color: #333;
+		padding: 5px 5px;
+
+		.shadow-achivement {
+			text-shadow: 0px 0px 3px;
+		}
+
+		h3 {
+			font-size: 25px;
+		}
+
+		h5 {
+			font-size: 15px;
+			text-transform: uppercase;
+			font-weight: bolder;
+		}
+	}
+}
+
+.contact-section {
+	position: relative;
+	color: $hamburger;
+	text-transform: uppercase;
+	background-image: url(/img/kontakt/city.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+	z-index: 0;
+
+	i {
+		font-size: 30px;
+		padding: 30px;
+		transition: color 0.6s;
+		cursor: pointer;
+	}
+
+	a {
+		color: $hamburger;
+	}
+	.contact-item {
+		// border: 2px solid white;
+		padding: 20px;
+	}
+
+	i:hover {
+		color: $mainColor;
+	}
+
+	.contact-title {
+		font-size: 25px;
+		letter-spacing: 5px;
+	}
+
+	.contact-us {
+		display: flex;
+		align-items: center;
+	}
+
+	.contact-text {
+		letter-spacing: 3px;
+		word-wrap: break-word;
+	}
+
+	.contact-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background-color: rgb(0, 0, 0, 0.4);
+		z-index: -1;
+	}
+}
+
+@media (min-width: 1024px) {
+	header div p {
+		font-size: 25px;
+	}
+}
+
+@media (min-width: 1200px) {
+	header.hero.img {
+		background-image: url(/img/mobileBig.jpeg);
+	}
+}
