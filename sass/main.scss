@@ -96,7 +96,7 @@ nav {
 
 header.hero-img {
 	position: relative;
-	background-image: url(img/mobileSmall.jpeg);
+	background-image: url(../img/mobileSmall.jpeg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -199,7 +199,7 @@ header.hero-img {
 
 .aboutme-hero {
 	position: relative;
-	background-image: url(img/videomakingBig.jpeg);
+	background-image: url(../img/videomakingBig.jpeg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -279,7 +279,7 @@ header.hero-img {
 
 .team-section {
 	position: relative;
-	background-image: url(img/team/zespółShadow.jpeg);
+	background-image: url(../img/team/zespółShadow.jpeg);
 	background-attachment: fixed;
 	background-size: cover;
 	z-index: 1;
@@ -357,7 +357,7 @@ header.hero-img {
 	position: relative;
 	color: $hamburger;
 	text-transform: uppercase;
-	background-image: url(/img/kontakt/city.jpeg);
+	background-image: url(../img/kontakt/city.jpeg);
 	background-attachment: fixed;
 	background-size: cover;
 	z-index: 0;
@@ -415,6 +415,6 @@ header.hero-img {
 
 @media (min-width: 1200px) {
 	header.hero.img {
-		background-image: url(/img/mobileBig.jpeg);
+		background-image: url(../img/mobileBig.jpeg);
 	}
 }
