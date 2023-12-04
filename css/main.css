@@ -139,7 +139,7 @@ nav .navbar-brand:hover {
 
 header.hero-img {
   position: relative;
-  background-image: url(./img/mobileBig.jpeg);
+  background-image: url(./img/videomakingBig.jpeg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -419,6 +419,6 @@ header.hero-img .hero-text {
 }
 @media (min-width: 1200px) {
   header.hero.img {
-    background-image: url(./img/mobileSmall.jpeg);
+    background-image: url(./img/videomakingBig.jpeg);
   }
 }/*# sourceMappingURL=main.css.map */
